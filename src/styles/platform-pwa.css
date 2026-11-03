@@ -1,0 +1,65 @@
+/* ==========================================================================
+   PWA / web platform layer — the RVC website language: square edges,
+   Menlo labels, Helvetica Bold headlines. Mobile: bottom text tab bar.
+   Desktop (>= 960px): top navigation, multi-column layouts, no tab bar.
+   ========================================================================== */
+
+html[data-platform="pwa"] { --maxw: 1240px; }
+
+html[data-platform="pwa"] .tab__icon { display: none; }
+html[data-platform="pwa"] .tab { font-size: 11px; letter-spacing: .08em; }
+
+html[data-platform="pwa"] .install-btn { display: none; }
+html[data-platform="pwa"].can-install .install-btn { display: inline-flex; }
+html[data-platform="pwa"] .topbar .install-btn { min-height: 40px; padding: 0 14px; font-size: 11px; }
+
+html[data-platform="pwa"] .narrow { max-width: 680px; }
+
+@media (min-width: 960px) {
+  html[data-platform="pwa"] { --topbar-h: 76px; --gutter: 32px; }
+  html[data-platform="pwa"] main { padding-bottom: 80px; }
+  html[data-platform="pwa"] .no-tabbar main { padding-bottom: 160px; }
+  html[data-platform="pwa"] .tabbar { display: none; }
+  html[data-platform="pwa"] .toast { bottom: 24px; }
+
+  html[data-platform="pwa"] .topbar__logo img { height: 44px; }
+  html[data-platform="pwa"] .topbar__nav {
+    display: flex; gap: 36px; position: absolute; left: 50%; transform: translateX(-50%);
+    font-family: var(--font-mono); text-transform: uppercase; font-size: 13px;
+  }
+  html[data-platform="pwa"] .topbar__nav a { color: var(--fg-mute); padding: 8px 0; border-bottom: 1px solid transparent; }
+  html[data-platform="pwa"] .topbar__nav a:hover { color: var(--fg); }
+  html[data-platform="pwa"] .topbar__nav a[aria-current="page"] { color: var(--fg); border-bottom-color: var(--fg); }
+  html[data-platform="pwa"] .topbar__nav a.nav-raw { color: var(--accent); }
+
+  html[data-platform="pwa"] .page-title { font-size: 72px; }
+
+  html[data-platform="pwa"] .home-hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px; align-items: end; }
+  html[data-platform="pwa"] .home-hero .hero { min-height: 600px; }
+  html[data-platform="pwa"] .home-hero__intro { display: flex !important; flex-direction: column; gap: 18px; padding-bottom: 12px; }
+  html[data-platform="pwa"] .home-hero .hero__body { display: none; }
+  html[data-platform="pwa"] .home-hero .hero::after { display: none; }
+
+  html[data-platform="pwa"] .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  html[data-platform="pwa"] .tile { aspect-ratio: 4 / 5; }
+  html[data-platform="pwa"] .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; align-items: start; }
+
+  html[data-platform="pwa"] .media-layout { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: start; }
+  html[data-platform="pwa"] .photo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+
+  html[data-platform="pwa"] .shop-layout { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px; align-items: start; }
+  html[data-platform="pwa"] .shop-layout .product-media { aspect-ratio: 1; }
+  html[data-platform="pwa"] .products { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 16px; }
+
+  html[data-platform="pwa"] .archive { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; }
+
+  html[data-platform="pwa"] dialog.sheet { margin: auto; border-radius: var(--r-sheet); max-width: 520px; }
+  html[data-platform="pwa"] .sheet__handle { display: none; }
+
+  html[data-platform="pwa"] .raw-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+}
+
+
+/* install sheet (iOS Safari instructions) */
+html[data-platform="pwa"] .install-steps li { display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); font-size: 15px; }
+html[data-platform="pwa"] .install-steps .perk__n { width: 22px; }

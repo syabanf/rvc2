@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1400" width="800" height="1400">
+<defs>
+  <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+  <radialGradient id="light" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .09 0"/></filter>
+</defs>
+<rect width="800" height="1400" fill="#0A1630"/>
+<rect width="800" height="1400" fill="url(#light)"/>
+<ellipse cx="400" cy="780" rx="176" ry="63.36" transform="rotate(-28 400 780)" fill="none" stroke="#3E7BFF" stroke-width="3" opacity="0.95"/><ellipse cx="400" cy="780" rx="272" ry="97.92" transform="rotate(-9 400 780)" fill="none" stroke="#3E7BFF" stroke-width="2.6" opacity="0.7999999999999999"/><ellipse cx="400" cy="780" rx="368" ry="132.48" transform="rotate(10 400 780)" fill="none" stroke="#3E7BFF" stroke-width="2.2" opacity="0.6499999999999999"/><ellipse cx="400" cy="780" rx="463.99999999999994" ry="167.03999999999996" transform="rotate(29 400 780)" fill="none" stroke="#3E7BFF" stroke-width="1.7999999999999998" opacity="0.5"/><circle cx="400" cy="780" r="46" fill="#9FC1FF"/>
+<rect width="800" height="1400" filter="url(#grain)"/>
+</svg>

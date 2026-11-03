@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+  <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+  <radialGradient id="light" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .09 0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="#BFB8AA"/>
+<rect width="800" height="1000" fill="url(#light)"/>
+<g transform="translate(-243.67816091954023 -249.42528735632175) scale(4.597701149425287)">
+    <path d="M112 110c0-40 56-40 56 0" fill="none" stroke="#D8CFBC" stroke-width="7"/>
+    <path d="M90 110h100l8 140H82z" fill="#EDE6D6"/>
+    <path d="M90 110h100l8 140H82z" fill="url(#fold)" opacity=".5"/>
+    <g transform="translate(140 175)"><g transform="translate(0 30)"><rect x="-40" y="-26" width="80" height="52" fill="none" stroke="#1D1D1D" stroke-width="1.6"/><text y="-1.6499999999999995" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="15" letter-spacing="-1" fill="#1D1D1D">RAW</text><text y="11.850000000000001" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="15" letter-spacing="-1" fill="#1D1D1D">VISION</text><text y="22" text-anchor="middle" font-family="Menlo, ui-monospace, monospace" font-size="5" fill="#1D1D1D">COLLECTIVE · JKT</text></g></g>
+  </g>
+<rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

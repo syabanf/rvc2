@@ -1,0 +1,50 @@
+{
+  "name": "Raw Vision Collective",
+  "short_name": "RVC",
+  "id": "/",
+  "description": "Exclusive photos, videos, merch, events and RAW Membership from Raw Vision Collective.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "lang": "en",
+  "categories": [
+    "entertainment",
+    "music",
+    "events"
+  ],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Upcoming events",
+      "url": "/events/"
+    },
+    {
+      "name": "Shop",
+      "url": "/merch/"
+    },
+    {
+      "name": "RAW Membership",
+      "url": "/membership/"
+    }
+  ]
+}

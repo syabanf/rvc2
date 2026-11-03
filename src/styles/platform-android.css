@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Android platform layer — Material 3 conventions:
+   top app bar, navigation bar with active indicator, filter chips,
+   large rounded cards, modal bottom sheet, snackbar, Google Pay / Wallet.
+   ========================================================================== */
+
+html[data-platform="android"] {
+  --r-card: 16px;
+  --r-btn: 20px;
+  --r-chip: 8px;
+  --r-sheet: 28px;
+  --r-media: 28px;
+  --gutter: 16px;
+  --topbar-h: 64px;
+  --tabbar-h: 80px;
+  --container: #3A352C;
+  --on-container: #E8DCC4;
+  --surface: #141412;
+  --surface-high: #1C1B19;
+}
+html[data-platform="android"] .theme-light {
+  --container: #E8DCC4;
+  --on-container: #2A2318;
+  --surface: #F3F2EF;
+  --surface-high: #FFFFFF;
+}
+
+html[data-platform="android"] body { font-family: var(--font-sans); }
+
+html[data-platform="android"] .topbar { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+html[data-platform="android"] .topbar.is-scrolled { background: var(--surface); border-bottom-color: transparent; }
+html[data-platform="android"] .topbar__logo img { height: 32px; }
+html[data-platform="android"] .topbar__title { display: block; font-size: 22px; font-weight: 500; margin-right: auto; }
+html[data-platform="android"] .topbar .back { font-size: 0; gap: 0; width: 48px; height: 48px; margin-left: -12px; justify-content: center; border-radius: 50%; color: var(--fg); }
+html[data-platform="android"] .topbar .back svg { width: 24px; height: 24px; }
+html[data-platform="android"] .topbar .back:hover { background: color-mix(in srgb, var(--fg) 8%, transparent); }
+html[data-platform="android"] .icon-btn { width: 48px; height: 48px; }
+
+html[data-platform="android"] .page-title { font-size: clamp(32px, 9vw, 45px); letter-spacing: -.01em; line-height: 1.05; }
+
+html[data-platform="android"] .btn {
+  font-family: var(--font-sans); text-transform: none; letter-spacing: .01em;
+  font-weight: 600; font-size: 14px; min-height: 48px; border-radius: 24px; padding: 0 24px;
+}
+html[data-platform="android"] .btn--primary { background: var(--on-container); color: #1E1A12; }
+html[data-platform="android"] .theme-light .btn--primary { background: #0A0A0A; color: #EDEBE6; }
+html[data-platform="android"] .hero .btn--primary { background: #E8DCC4; color: #1E1A12; }
+html[data-platform="android"] .btn--ghost { border-color: #8F8C86; }
+
+html[data-platform="android"] .chip { font-family: var(--font-sans); text-transform: none; font-size: 14px; font-weight: 500; min-height: 32px; border-color: #4A4A4A; color: var(--fg); }
+html[data-platform="android"] .chip[aria-pressed="true"] { background: var(--container); color: var(--on-container); border-color: transparent; }
+html[data-platform="android"] .segmented { border-color: #8F8C86; border-radius: 20px; }
+html[data-platform="android"] .segmented a { min-height: 40px; font-family: var(--font-sans); text-transform: none; font-size: 14px; font-weight: 500; color: var(--fg); }
+html[data-platform="android"] .segmented a[aria-current="page"] { background: var(--container); color: var(--on-container); }
+html[data-platform="android"] .option span { font-family: var(--font-sans); font-size: 14px; }
+html[data-platform="android"] .option input:checked + span { background: var(--container); color: var(--on-container); border-color: transparent; }
+
+html[data-platform="android"] .section-label { font-family: var(--font-sans); text-transform: none; font-size: 16px; font-weight: 600; color: var(--fg); }
+html[data-platform="android"] .section-label a { font-size: 14px; color: var(--on-container); }
+
+html[data-platform="android"] .tile, html[data-platform="android"] .feature, html[data-platform="android"] .event-feature, html[data-platform="android"] .teaser { border-radius: 28px; }
+html[data-platform="android"] .menu { background: transparent; border-radius: 0; }
+html[data-platform="android"] .menu__item { padding: 0 4px; min-height: 64px; }
+html[data-platform="android"] .menu__item + .menu__item { border-top: 0; }
+html[data-platform="android"] .menu__icon { width: 24px; height: 24px; color: var(--on-container); flex: none; }
+
+html[data-platform="android"] dialog.sheet { background: var(--surface-high); max-width: 640px; }
+html[data-platform="android"] .sheet__handle { width: 32px; height: 4px; margin-top: 22px; background: #6E6B66; }
+html[data-platform="android"] .sheet__head { padding: 16px 24px 8px; }
+html[data-platform="android"] .sheet__title { font-size: 22px; font-weight: 500; }
+html[data-platform="android"] .sheet__body { padding: 0 24px calc(24px + var(--safe-b)); }
+html[data-platform="android"] .pay-method input { accent-color: var(--on-container); }
+
+html[data-platform="android"] .tabbar { background: var(--surface); border-top: 0; }
+html[data-platform="android"] .tab { font-family: var(--font-sans); text-transform: none; letter-spacing: .02em; font-size: 12px; font-weight: 500; gap: 4px; color: var(--fg-dim); }
+html[data-platform="android"] .tab[aria-current="page"] { color: var(--fg); font-weight: 700; }
+html[data-platform="android"] .tab__icon { width: 64px; height: 32px; border-radius: 16px; transition: background .2s; }
+html[data-platform="android"] .tab[aria-current="page"] .tab__icon { background: var(--container); color: var(--on-container); }
+
+html[data-platform="android"] .toast { border-radius: 4px; background: #EDEBE6; color: #1C1B19; display: flex; justify-content: space-between; align-items: center; }
+
+html[data-platform="android"] .switch { width: 52px; height: 32px; }
+html[data-platform="android"] .switch__track { background: transparent; border: 2px solid #8F8C86; }
+html[data-platform="android"] .switch__thumb { top: 8px; left: 8px; width: 16px; height: 16px; background: #8F8C86; }
+html[data-platform="android"] .switch input:checked ~ .switch__track { background: var(--on-container); border-color: var(--on-container); }
+html[data-platform="android"] .switch input:checked ~ .switch__thumb { transform: translateX(20px); top: 4px; left: 4px; width: 24px; height: 24px; background: #1E1A12; }

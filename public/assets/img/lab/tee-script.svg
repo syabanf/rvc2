@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<defs>
+  <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+  <radialGradient id="light" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .09 0"/></filter>
+</defs>
+<rect width="1000" height="1000" fill="#EEECE8"/>
+<rect width="1000" height="1000" fill="url(#light)"/>
+<g transform="translate(-200 -155) scale(5)">
+    
+    <path d="M70 70l30-18h20c4 10 16 16 20 16s16-6 20-16h20l30 18-14 30-18-8v118H102V92l-18 8z" fill="#8A4E2E"/>
+    <path d="M70 70l30-18h20c4 10 16 16 20 16s16-6 20-16h20l30 18-14 30-18-8v118H102V92l-18 8z" fill="url(#fold)" opacity=".5"/>
+    <g transform="translate(140 140)"><text y="-4" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#F1D9B8">Raw</text><text y="20" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#F1D9B8">vision</text><circle cy="-30" r="8" fill="#E7C96A"/></g>
+  </g>
+<rect width="1000" height="1000" filter="url(#grain)"/>
+</svg>

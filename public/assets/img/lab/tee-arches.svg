@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+  <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+  <radialGradient id="light" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .09 0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="#2B2A28"/>
+<rect width="800" height="1000" fill="url(#light)"/>
+<g transform="translate(-160 -24) scale(4)">
+    
+    <path d="M70 70l30-18h20c4 10 16 16 20 16s16-6 20-16h20l30 18-14 30-18-8v118H102V92l-18 8z" fill="#141414"/>
+    <path d="M70 70l30-18h20c4 10 16 16 20 16s16-6 20-16h20l30 18-14 30-18-8v118H102V92l-18 8z" fill="url(#fold)" opacity=".5"/>
+    <g transform="translate(140 140)"><path d="M-34 34V-6a34 34 0 0 1 68 0V34" fill="none" stroke="#B8432E" stroke-width="1.6"/><path d="M-30 34V-3a30 30 0 0 1 60 0V34" fill="none" stroke="#E9DCC4" stroke-width="1.6"/><path d="M-26 34V0a26 26 0 0 1 52 0V34" fill="none" stroke="#B8432E" stroke-width="1.6"/><path d="M-22 34V3a22 22 0 0 1 44 0V34" fill="none" stroke="#E9DCC4" stroke-width="1.6"/><path d="M-18 34V6a18 18 0 0 1 36 0V34" fill="none" stroke="#B8432E" stroke-width="1.6"/><path d="M-14 34V9a14 14 0 0 1 28 0V34" fill="none" stroke="#E9DCC4" stroke-width="1.6"/><g fill="#E9DCC4"><circle cx="-12" cy="10" r="5"/><circle cx="-12" cy="10" r="1.8" fill="#B8432E"/><circle cx="0" cy="10" r="5"/><circle cx="0" cy="10" r="1.8" fill="#B8432E"/><circle cx="12" cy="10" r="5"/><circle cx="12" cy="10" r="1.8" fill="#B8432E"/></g>
+   <text y="48" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="7" letter-spacing="1" fill="#E9DCC4">RAW EXPERIENCE</text></g>
+  </g>
+<rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

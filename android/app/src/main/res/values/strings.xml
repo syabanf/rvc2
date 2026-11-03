@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RVC</string>
+    <string name="title_activity_main">RVC</string>
+    <string name="package_name">id.rawvision.app</string>
+    <string name="custom_url_scheme">id.rawvision.app</string>
+</resources>

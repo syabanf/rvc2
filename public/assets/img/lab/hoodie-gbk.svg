@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+  <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+  <radialGradient id="light" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .09 0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="#D9D6CF"/>
+<rect width="800" height="1000" fill="url(#light)"/>
+<g transform="translate(-146.97674418604652 -4) scale(3.9069767441860463)">
+    
+    <path d="M68 82l34-24c8-14 22-20 38-20s30 6 38 20l34 24-14 40-18-10v108H100V112l-18 10z" fill="#2E2F31"/>
+    <path d="M68 82l34-24c8-14 22-20 38-20s30 6 38 20l34 24-14 40-18-10v108H100V112l-18 10z" fill="url(#fold)" opacity=".5"/>
+    <g transform="translate(140 140)"><text y="-2.1999999999999993" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="-1" fill="#D86A7A">GBK</text><text y="15.8" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="-1" fill="#D86A7A">24.10</text><g stroke="#D86A7A" stroke-width="1.2"><line x1="-30" x2="30" y1="30" y2="30"/><line x1="-30" x2="30" y1="34" y2="34"/><line x1="-30" x2="30" y1="38" y2="38"/><line x1="-30" x2="30" y1="42" y2="42"/><line x1="-30" x2="30" y1="46" y2="46"/></g></g>
+  </g>
+<rect width="800" height="1000" filter="url(#grain)"/>
+</svg>
